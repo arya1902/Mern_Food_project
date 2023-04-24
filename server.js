@@ -14,9 +14,7 @@ const userRoute = require('./routes/userRoute')
 app.use('/api/pizzas/',pizzaRoute)
 app.use('/api/users/',userRoute)
 
-app.get("/",(req,res)=>{
-res.send("Server is Running", +port)
-});
+
 
 
 const port = process.env.PORT || 8000;
